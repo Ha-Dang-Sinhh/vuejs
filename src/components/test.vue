@@ -35,19 +35,19 @@ export default {
 }
 </script>
 
-<template lang="">
-    <div>
-        <button @click="count++">Count is: {{ count }}</button>
-        <span >{{number}}</span>
-        <button @click="increase()" type="">increase</button>
-        <button @click="decrease()" type="">decrease</button>
-<!--        <h2>{{nameOfUser}}</h2>-->
-<!--        <h2>{{user.name}}</h2>-->
-    </div>
-</template>
+<!--<template lang="">-->
+<!--    <div>-->
+<!--        <button @click="count++">Count is: {{ count }}</button>-->
+<!--        <span >{{number}}</span>-->
+<!--        <button @click="increase()" type="">increase</button>-->
+<!--        <button @click="decrease()" type="">decrease</button>-->
+<!--&lt;!&ndash;        <h2>{{nameOfUser}}</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;        <h2>{{user.name}}</h2>&ndash;&gt;-->
+<!--    </div>-->
+<!--</template>-->
 
-<style lang="">
-    button {
-        font-weight: bold;
-    }
-</style>
+<!--<style lang="">-->
+<!--    button {-->
+<!--        font-weight: bold;-->
+<!--    }-->
+<!--</style>-->

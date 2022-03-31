@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-  <Cy />
-  <Test />
+<!--  <TodoApp />-->
+    <SeenImages />
   </div>
 </template>
 
 <script>
 import Cy from './components/Cy';
 import Test from './components/test';
+import TodoApp from './components/todoApp';
+import SeenImages from './components/seenImages';
 
 export default {
   name: 'App',
   components: {
     Cy,
-    Test
+    Test,
+    TodoApp,
+    SeenImages
   }
 }
 </script>
