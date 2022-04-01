@@ -3,7 +3,8 @@
 <!--    <Test />-->
 <!--  <TodoApp />-->
 <!--    <SeenImages />-->
-    <Practice2 />
+<!--    <Practice2 />-->
+    <Computer></Computer>
   </div>
 </template>
 
@@ -12,7 +13,8 @@
  import Test from './components/test';
 // import TodoApp from './components/todoApp';
 // import SeenImages from './components/seenImages';
-import Practice2 from './components/practice-2';
+// import Practice2 from './components/practice-2';
+import Computer from './components/Computer';
 export default {
   name: 'App',
   components: {
@@ -20,7 +22,8 @@ export default {
     //  Test,
     // TodoApp,
     // SeenImages,
-    Practice2
+    // Practice2,
+    Computer
   }
 }
 </script>

@@ -76,7 +76,6 @@ export default {
     </div>
         <h2>giá đắt nhất {{maxPrice}}</h2>
         <h2>giá đắt rẻ {{minPrice}}</h2>
-
     </div>
   </div>
 </template>
