@@ -20,12 +20,15 @@ export default {
       console.log(this.img);
       this.show = !this.show;
     },
-    mounted:function() {
-      document.addEventListener('keydown', (e) => {
-        if (e.key === "Escape") {
-          this.show = !this.show;
-        }
-      });
+    mounted() {
+      setTimeout(() =>{
+        document.addEventListener('keyup', (e) => {
+          alert('abc')
+          if (e.key === "Escape") {
+            this.show = !this.show;
+          }
+        });
+      })
     }
   },
 }
@@ -33,11 +36,11 @@ export default {
 </script>
 
 <template lang="">
-    <div class="wrapper">
+    <div class="wrapper" @keyup.esc="closeModalLogin(event)">
         <div class="image" @click="seenImg(index)" v-for="(img,index) in dataImages" :key="index" >
           <img :src="img" />
         </div>
-        <div v-if="show" class="showImg" @keydown.esc="closeModalLogin(event)">
+        <div v-if="show" class="showImg" >
             <span @click="show = !show">close</span>
             <img :src="img" />
         </div>
@@ -55,11 +58,13 @@ export default {
   width:400px;
   height:400px;
   margin:10px;
+  cursor: pointer;
 }
   img{
     width:300px;
     height:300px;
     object-fit: cover;
+    cursor: pointer;
   }
 
   .showImg{
@@ -78,6 +83,7 @@ export default {
   height:80vh;
   object-fit: cover;
   opacity:1;
+  cursor: default;
 }
 
 .showImg span{
@@ -89,5 +95,6 @@ export default {
   position:absolute;
   right:10px;
   top:10px;
+  cursor: pointer;
 }
 </style>

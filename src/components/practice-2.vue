@@ -43,21 +43,46 @@ export default {
   methods: {
 
   },
+  computed:{
+    hotProducts(){
+      return this.products.filter(product => product.hot);
+    },
+    maxPrice(){
+      return Math.max( ...this.products.map(product => product.price));
+    }
+    mimPrice(){
+      return Math.min( ...this.products.map(product => product.price));
+    }
+  }
 }
 
 </script>
 
 <template lang="">
   <div>
+
     <div v-for="(item,index) in products" :key="index">
         <h6>{{item.name}}</h6>
         <span>{{item.price}}</span>
         <span>{{item.publicDate}}</span>
-<!--        <img :src="item.image" alt="">-->
+        <img :src="item.image" alt="">
+    </div>
+    <h2>Bài 2</h2>
+    <div v-for="(product,index) in hotProducts" :key="index">
+        h6>{{product.name}}</h6>
+        <span>{{product.price}}</span>
+        <span>{{product.publicDate}}</span>
+        <img :src="product.image" alt="">
+    </div>
+        <h2>giá đắt nhất {{maxPrice}}</h2>
+        <h2>giá đắt rẻ {{minPrice}}</h2>
+
     </div>
   </div>
 </template>
 
 <style lang="">
-
+img{
+  width:300px;
+}
 </style>
