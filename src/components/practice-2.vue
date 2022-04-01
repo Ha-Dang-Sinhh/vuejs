@@ -49,7 +49,7 @@ export default {
     },
     maxPrice(){
       return Math.max( ...this.products.map(product => product.price));
-    }
+    },
     mimPrice(){
       return Math.min( ...this.products.map(product => product.price));
     }
