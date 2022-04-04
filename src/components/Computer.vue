@@ -76,9 +76,10 @@ export default {
       };
 
       this.datsNumbers=[];
+      this.count='0';
     },
     remove(){
-      this.count='0',
+      this.count='0';
       this.number = '';
       this.datsNumbers=[];
     }
